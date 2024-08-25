@@ -1,0 +1,91 @@
+/* src/styles.css */
+
+/* Root color variables */
+:root {
+    --primary-color: #6A0DAD; /* Purple */
+    --secondary-color: #E6E6FA; /* Lavendar */
+    --text-color: #FFFFFF; /* White */
+    --background-color: #F3F3F3; /* Light grey */
+    --gradient-color: linear-gradient(135deg, #6A0DAD, #E6E6FA); /* Extra feature */
+}
+
+/* Apply global styles */
+body {
+    margin: 0px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', Arial, Helvetica, sans-serif, serif;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+}
+
+/* Homepage styling */
+h1 {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 20px;
+    color: var(--primary-color);
+}
+
+/* Navigation */
+nav {
+    text-align: center;
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0px;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-size: 1.5em;
+    color: var(--primary-color);
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
+
+/* Pages contents styling */
+h2 {
+    text-align: center;
+    margin: 30px;
+    color: var(--primary-color);
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background-color: var(--secondary-color);
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s;
+}
+
+ul li:hover {
+    transform: translateY(-5px);
+}
+
+/* Project links */
+ul li a {
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+ul li a:hover {
+    color: var(--secondary-color);
+}
